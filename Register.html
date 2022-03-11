@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Web Page</title>
+<style>
+.Mainpage {
+	background-color: #FFFFFF;
+	width: 1350px;
+	height: 100px;
+	position: absolute;
+	opacity: 0.8;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Mainpage .logo {
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	padding-top: 30px;
+	color: white;
+	padding-left: 50px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.header {
+	top: 0;
+	overflow: hidden;
+	background-color: #03254c;
+	padding: 20px 10px;
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.header-right {
+		float: none;
+	}
+}
+.fixed-footer {
+	width: 100%;
+	position: fixed;
+	background: #333;
+	padding: 10px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.fixed-footer {
+	bottom: 0;
+}
+
+.loginmiddle .loginhead {
+	height: 50px;
+	width: 500px;
+	background-color: #5c80e4;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.loginmiddle .logincontent {
+	height: 300px;
+	width: 450px;
+	padding-top: 50px;
+	padding-left: 50px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.logincontent {
+	padding-left: 30px;
+}
+</style>
+</head>
+<body>
+	<form name="loginForm" action="Login" method="post">
+	
+		<div class="Mainpage">
+
+			<div class="header">
+				<div class="logo">
+					OVS Airways
+					<div class="header-right">
+						<a href="Home.html">Home</a> 
+						<a href="Flight.html">Flight</a> 
+						<a href="Login.html">Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="loginmiddle"
+			style="background-color: #FFFFFF; height: 600px; width: 500px; position: absolute; margin-left: 450px; margin-top: 230px; opacity: 0.9;">
+
+			<div class="loginhead"
+				style="font-weight: bold; font-size: 28px; text-align: center; padding-top: 30px; color: white; opacity: 0.9;">
+				 Account Creation</div>
+
+			<div class="logincontent">
+				<label style="color: black; font-size: 20px; font-weight: bold;">User name </label> <br> <br> 
+				<input type="text" id="name" placeholder="Enter username" name="username" required style="height: 30px; width: 300px;"><br></br>
+				<label style="color: black; font-size: 20px; font-weight: bold;">Email-id </label> <br> <br> 
+				<input type="text" id="name" placeholder="Enter the Email id" name="email-id" required style="height: 30px; width: 300px;"><br></br> 
+				
+				<label style="color: black; font-size: 20px; font-weight: bold;">New Password</label> <br> <br> 
+				<input type="password" id="passwd" placeholder="Enter Password" name="newpassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contains atleast one capital letter,atleast one number ,atleast one special character" required style="height: 30px; width: 300px;"><br></br>
+				
+				
+				<label style="color: black; font-size: 20px; font-weight: bold;">Confirm Password</label> <br> <br>
+				 
+				 <input type="password" id="passwd" placeholder="Enter Password" name="cpassword" required style="height: 30px; width: 300px;"><br></br>
+				
+				<input type="submit" value="Register" required style="height: 40px; width: 100px; border: none; background-color: #5c80e4; text-align: center; text-decoration: none; display: inline-block; font-size: 19px; font-family: 'Times New Roman', Times, serif; margin: 4px 130px; cursor: pointer;"><br />
+
+			</div>
+
+
+		</div>
+
+		<img src="img\p4.jpg" alt="img"
+			width="1350" height="900">
+					<div class="fixed-footer">
+		<div class="container">Copyright &copy; 2022 OVS Airways</div>
+	</div>
+			
+	</form>
+</body>
+</html>

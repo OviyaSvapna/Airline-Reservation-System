@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.Mainpage {
+	background-color: #FFFFFF;
+	width: 1350px;
+	height: 100px;
+	position: absolute;
+	opacity: 0.8;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.Mainpage .logo {
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	padding-top: 30px;
+	color: white;
+	padding-left: 50px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+	top: 0;
+	overflow: hidden;
+	background-color: #03254c;
+	padding: 20px 10px;
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.header-right {
+		float: none;
+	}
+}
+
+.fixed-footer {
+	width: 100%;
+	/*position: fixed;*/
+	background: #333;
+	padding: 10px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.fixed-footer {
+	bottom: 0;
+}
+</style>
+<script>
+            function myFunction() {
+                document.getElementById("page").submit();
+            }
+        </script>
+</head>
+<body>
+
+	<div class="Mainpage">
+		<form id="page" action="Flight" method="post">
+			<div class="header">
+				<div class="logo">
+					OVS Airways
+					<div class="header-right">
+						<a href="Home.html">Home</a>
+						<a href="#" onclick="myFunction()">Flight</a>
+						<a	href="AddUserDet.html">Add Detail</a> <a href="Home.html">Logout</a>
+					
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<img src="img\p4.jpg" alt="img" width="1350" height="900">
+	<div class="fixed-footer">
+		<div class="container">Copyright &copy; 2022 OVS Airways</div>
+	</div>
+
+
+
+</body>
+</html>
